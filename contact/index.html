@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | RSTQ Transportation - Cinematic Concierge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#785d00",
+              "on-error": "#690005",
+              "on-tertiary": "#003642",
+              "on-primary-fixed-variant": "#45455b",
+              "on-secondary-fixed": "#241a00",
+              "tertiary-fixed": "#b3ebff",
+              "secondary": "#e6c364",
+              "on-surface-variant": "#c8c5cd",
+              "outline-variant": "#47464c",
+              "primary-fixed": "#e2e0fc",
+              "secondary-fixed-dim": "#e6c364",
+              "surface-variant": "#353534",
+              "inverse-surface": "#e5e2e1",
+              "surface": "#131313",
+              "on-background": "#e5e2e1",
+              "surface-tint": "#c6c4df",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed-dim": "#4cd6fb",
+              "on-tertiary-fixed-variant": "#004e5f",
+              "tertiary": "#4cd6fb",
+              "surface-container-highest": "#353534",
+              "on-secondary-container": "#fdd977",
+              "secondary-fixed": "#ffe08f",
+              "primary-container": "#1a1a2e",
+              "surface-container": "#201f1f",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#c6c4df",
+              "on-error-container": "#ffdad6",
+              "primary": "#c6c4df",
+              "on-tertiary-fixed": "#001f27",
+              "surface-bright": "#393939",
+              "on-primary-container": "#83829b",
+              "on-tertiary-container": "#0090ad",
+              "surface-dim": "#131313",
+              "on-surface": "#e5e2e1",
+              "on-primary-fixed": "#1a1a2e",
+              "on-primary": "#2f2e43",
+              "surface-container-high": "#2a2a2a",
+              "inverse-on-surface": "#313030",
+              "on-secondary": "#3d2e00",
+              "outline": "#929097",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#001f27",
+              "inverse-primary": "#5d5c74",
+              "on-secondary-fixed-variant": "#584400"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(28, 27, 27, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #ffe090 0%, #e6c364 100%);
+        }
+        .text-reveal {
+            letter-spacing: 0.2em;
+        }
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  </head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/60 backdrop-blur-md shadow-[0_48px_48px_rgba(26,26,46,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#e6c364] font-headline">
+                RSTQ Transportation
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-headline font-bold tracking-tight">
+<a class="text-[#e6c364] border-b-2 border-[#e6c364] pb-1" href="/">Home</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/about-us/">About Us</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/fleet/">Fleet</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/services/">Services</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/contact/">Contact Us</a>
+</div>
+<button class="gold-gradient text-on-secondary-fixed px-6 py-2.5 rounded-md font-bold hover:opacity-80 transition-all duration-300 active:scale-95">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- HERO SECTION -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="luxury black limousine parked at night in front of the illuminated United States Capitol building, cinematic low-angle shot with golden bokeh lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMeB4eYwh0iIA9dtdLQxnyuKq9_MWma1p65wmq5oTf7tJ7Fr3kdNWAYQXgxMdV2QHKDxG59va1dYfhgOYBZ6pzZxCUk-ILpom53b6A2K69qMEnAObcv3uHFxGzsbirFzDQeZTsigllwV92OKl10j8vfq6Yun_ungjpZc8UXMTLCw6YyAqrWh7Bv50rH4l1TJuB9him_gXcwNCrPDfT3V-8pPEzqjUa_5Pd_MTGYD5-hp0RZO1COjaxUwdZ3SivGPum-KhcNC_W6WQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent opacity-80"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 w-full">
+<div class="max-w-4xl space-y-6">
+<span class="text-primary font-headline uppercase tracking-[0.4em] text-sm font-medium animate-pulse">Cinematic Concierge</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-none">
+                    Connect with <br/>
+<span class="text-transparent bg-clip-text gold-gradient">Excellence.</span>
+</h1>
+<p class="text-xl md:text-2xl font-light text-on-surface/70 max-w-2xl leading-relaxed">
+                    Your Journey, Orchestrated. Experience the pinnacle of luxury transportation in the DMV area.
+                </p>
+<div class="pt-8 flex gap-4">
+<a class="gold-gradient text-on-primary-fixed px-10 py-4 rounded-full font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(230,195,100,0.3)] transition-all" href="#inquiry">
+                        Request Quote
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+<span class="text-[10px] uppercase tracking-widest">Scroll to explore</span>
+<div class="w-[1px] h-16 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- CONTACT CHANNELS & FORM (BENTO LAYOUT) -->
+<section class="py-32 px-8 md:px-24 bg-surface-dim relative" id="inquiry">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Information Cluster -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="space-y-16">
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-bold tracking-tight">Direct Access</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+<div class="grid gap-12">
+<!-- Phone -->
+<div class="group cursor-pointer">
+<p class="text-xs font-headline uppercase tracking-widest text-primary mb-2">Primary Line</p>
+<a class="text-3xl md:text-4xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors duration-500" href="tel:2403516025">240-351-6025</a>
+</div>
+<!-- Email -->
+<div class="group cursor-pointer">
+<p class="text-xs font-headline uppercase tracking-widest text-primary mb-2">Email Correspondence</p>
+<a class="text-2xl md:text-3xl font-headline font-medium text-on-surface group-hover:text-primary transition-colors duration-500" href="mailto:info@rstq.net">info@rstq.net</a>
+</div>
+<!-- HQ -->
+<div>
+<p class="text-xs font-headline uppercase tracking-widest text-primary mb-2">Service Region</p>
+<h3 class="text-xl md:text-2xl font-headline font-medium">Headquarters</h3>
+<p class="text-on-surface/60 mt-1">Serving the DMV Area (District, Maryland, Virginia)</p>
+</div>
+</div>
+</div>
+<div class="mt-24 pt-12 border-t border-outline-variant/15 flex gap-8">
+<a class="text-on-surface/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">share</span>
+</a>
+<a class="text-on-surface/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">public</span>
+</a>
+<a class="text-on-surface/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">work</span>
+</a>
+</div>
+</div>
+<!-- Inquiry Form Card -->
+<div class="lg:col-span-7">
+<div class="glass-panel p-10 md:p-16 rounded-xl border border-outline-variant/10 shadow-2xl">
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Name -->
+<div class="relative group">
+<input class="peer block w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all text-on-surface" id="name" placeholder=" " type="text"/>
+<label class="absolute top-3 left-0 text-on-surface/40 font-label text-sm uppercase tracking-wider pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" for="name">Full Name</label>
+</div>
+<!-- Email -->
+<div class="relative group">
+<input class="peer block w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all text-on-surface" id="email" placeholder=" " type="email"/>
+<label class="absolute top-3 left-0 text-on-surface/40 font-label text-sm uppercase tracking-wider pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" for="email">Email Address</label>
+</div>
+</div>
+<!-- Service Type Dropdown -->
+<div class="relative group">
+<select class="peer block w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all text-on-surface appearance-none" id="service">
+<option class="bg-surface-container" disabled="" selected="" value="">Select Service Type</option>
+<option class="bg-surface-container" value="airport">Airport Transfer</option>
+<option class="bg-surface-container" value="wedding">Wedding &amp; Gala</option>
+<option class="bg-surface-container" value="corporate">Corporate Accounts</option>
+<option class="bg-surface-container" value="hourly">Hourly/As Directed</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-3 text-on-surface/40 pointer-events-none">expand_more</span>
+</div>
+<!-- Message -->
+<div class="relative group">
+<textarea class="peer block w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all text-on-surface" id="message" placeholder=" " rows="4"></textarea>
+<label class="absolute top-3 left-0 text-on-surface/40 font-label text-sm uppercase tracking-wider pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" for="message">Your Journey Requirements</label>
+</div>
+<div class="pt-6">
+<button class="w-full gold-gradient py-5 rounded-full text-on-primary-fixed font-headline font-bold text-lg uppercase tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg" type="submit">
+                                Request a Quote
+                            </button>
+<p class="text-center text-xs text-on-surface/30 mt-6 font-light italic">
+                                Our concierge team typically responds within 15 minutes.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- MAP AREA (FULL WIDTH) -->
+<section class="w-full h-[600px] relative bg-surface-container-low overflow-hidden">
+<!-- Stylized Map UI -->
+<div class="absolute inset-0 bg-neutral-900 overflow-hidden grayscale contrast-125 brightness-50">
+<img class="w-full h-full object-cover opacity-30" data-alt="stylized top-down view of Washington DC city grid map at night with glowing street lights and dark shadows" data-location="Washington DC" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm9A-aaWHRXJ_cGssM6wOhUvqmeNRSlNyw0I9TTUlAOfDpjoeaNiZ3mfKv8h4S9wcyLHJa-L6dgSh3pax6bAIwxsy4clImovmfByyMDAN4EGgUJXqdDqfuhOdxMrIRZvBnIszHhAnKnIXO8TzMgudap-rcgB9at0j9jO31RwxUws-Q13gjzq6TfRA3W_63YGi-G1NwKVxhhue5nfArzrpgXi3Y-Pt3BGahxNhdurloYKPEfM7hYcrA6WFzN_TtWKXcKG5J6qEOmUo"/>
+</div>
+<!-- Interactive Overlay elements -->
+<div class="absolute inset-0 z-10 flex items-center justify-center">
+<div class="relative">
+<!-- DC Pulse -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-4 h-4 bg-primary rounded-full relative z-20 shadow-[0_0_20px_#e6c364]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-primary/20 rounded-full animate-ping"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 border border-primary/10 rounded-full"></div>
+</div>
+<div class="bg-surface-container-high/90 backdrop-blur-md p-6 rounded-lg border border-primary/20 shadow-2xl relative z-30 translate-x-12 -translate-y-24 w-64">
+<h4 class="text-primary font-headline font-bold text-sm uppercase mb-2">Service Hub</h4>
+<p class="text-xs text-on-surface/80 leading-relaxed">
+                        Operating across the District, Northern Virginia, and suburban Maryland with 24/7 availability.
+                    </p>
+<div class="mt-4 flex items-center gap-2">
+<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+<span class="text-[10px] uppercase font-bold text-green-500">Live Operations</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 z-20 pointer-events-none">
+<h3 class="text-5xl md:text-7xl font-headline font-black text-on-surface opacity-5 select-none uppercase">Coverage DMV</h3>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-[#131313] w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-[#e6c364] uppercase tracking-[0.1em] font-headline mb-6">
+                    RSTQ Transportation
+                </div>
+<p class="text-[#e5e2e1]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Elevating the standard of luxury transportation in the DMV area through commitment, punctuality, and world-class service.
+                </p>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Quick Links</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Home</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">About Us</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Fleet</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Contact Info</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                        240-351-6025
+                    </li>
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                        info@rstq.net
+                    </li>
+<li class="flex items-start gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                        DMV Area, USA
+                    </li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Follow Us</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-[#e5e2e1]/40 font-['Plus_Jakarta_Sans'] text-xs tracking-wide">
+                © 2024 RSTQ Transportation. Where Your Journey Matters Most. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

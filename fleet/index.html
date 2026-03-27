@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Fleet | RSTQ Transportation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#785d00",
+              "on-error": "#690005",
+              "on-tertiary": "#003642",
+              "on-primary-fixed-variant": "#45455b",
+              "on-secondary-fixed": "#241a00",
+              "tertiary-fixed": "#b3ebff",
+              "secondary": "#e6c364",
+              "on-surface-variant": "#c8c5cd",
+              "outline-variant": "#47464c",
+              "primary-fixed": "#e2e0fc",
+              "secondary-fixed-dim": "#e6c364",
+              "surface-variant": "#353534",
+              "inverse-surface": "#e5e2e1",
+              "surface": "#131313",
+              "on-background": "#e5e2e1",
+              "surface-tint": "#c6c4df",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed-dim": "#4cd6fb",
+              "on-tertiary-fixed-variant": "#004e5f",
+              "tertiary": "#4cd6fb",
+              "surface-container-highest": "#353534",
+              "on-secondary-container": "#fdd977",
+              "secondary-fixed": "#ffe08f",
+              "primary-container": "#1a1a2e",
+              "surface-container": "#201f1f",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#c6c4df",
+              "on-error-container": "#ffdad6",
+              "primary": "#c6c4df",
+              "on-tertiary-fixed": "#001f27",
+              "surface-bright": "#393939",
+              "on-primary-container": "#83829b",
+              "on-tertiary-container": "#0090ad",
+              "surface-dim": "#131313",
+              "on-surface": "#e5e2e1",
+              "on-primary-fixed": "#1a1a2e",
+              "on-primary": "#2f2e43",
+              "surface-container-high": "#2a2a2a",
+              "inverse-on-surface": "#313030",
+              "on-secondary": "#3d2e00",
+              "outline": "#929097",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#001f27",
+              "inverse-primary": "#5d5c74",
+              "on-secondary-fixed-variant": "#584400"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #e6c364 0%, #785d00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gold-gradient {
+            background: linear-gradient(135deg, #e6c364 0%, #785d00 100%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-background text-on-background font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/60 backdrop-blur-md shadow-[0_48px_48px_rgba(26,26,46,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#e6c364] font-headline">
+                RSTQ Transportation
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-headline font-bold tracking-tight">
+<a class="text-[#e6c364] border-b-2 border-[#e6c364] pb-1" href="/">Home</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/about-us/">About Us</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/fleet/">Fleet</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/services/">Services</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/contact/">Contact Us</a>
+</div>
+<button class="gold-gradient text-on-secondary-fixed px-6 py-2.5 rounded-md font-bold hover:opacity-80 transition-all duration-300 active:scale-95">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-start overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury black sedan near the US Capitol building in Washington DC" class="w-full h-full object-cover opacity-60" data-alt="a sleek black luxury sedan parked on a clean asphalt road with the illuminated US Capitol building in the background at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDix28YG_X-1Agkjhizs7txgSEe_rbwpngH4WWSeXZdRRvHaC9QiPuhThsVXaNlNN05xR1-6jsSxJCdHbz7drfQ0_oi8BqdBYFPjcoefWlgbR4uEjwHLFw7xiu_xcU6_ZxybsaljtiAPWul1pbKr4LNfd7ga0Wf6GNuStQo1sYnHlKzW8JB75NOgxxAlvZki4i7neikla7QQSiHVytuUNnkkOcvB7y1arcsQJA5TOQWCOIbHIwVs_8hI4JKSXvIBvrZTiEtF2BhZb8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#131313] via-[#131313]/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-20 max-w-4xl">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-sm mb-4 block">Executive Excellence</span>
+<h1 class="font-headline font-extrabold text-6xl md:text-[5.5rem] leading-[0.95] tracking-tight mb-8">
+                Our <span class="text-gradient-gold italic">Elite</span> Fleet
+            </h1>
+<p class="font-body text-on-surface-variant text-xl md:text-2xl leading-relaxed max-w-2xl mb-12">
+                Experience the pinnacle of professional transit in the DMV area. From discreet executive sedans to grand-scale coaches, we define the kinetic concierge experience.
+            </p>
+<div class="flex gap-4">
+<button class="btn-gold-gradient text-on-secondary-fixed font-label font-bold uppercase tracking-widest px-8 py-4 rounded-md">View All Vehicles</button>
+</div>
+</div>
+</section>
+<!-- Vehicle Catalog (Bento-style Grid) -->
+<section class="py-32 px-8 max-w-[1440px] mx-auto bg-surface">
+<div class="mb-20 text-center md:text-left">
+<h2 class="font-headline font-bold text-4xl mb-4">Curated Collection</h2>
+<p class="text-on-surface-variant max-w-xl">Each vehicle in our fleet is meticulously maintained to exceed the highest standards of luxury and safety.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Cadillac XTS - 4 Pax -->
+<div class="md:col-span-4 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-80 overflow-hidden rounded-md">
+<img alt="Cadillac XTS Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a luxury car interior featuring premium black leather seats and subtle ambient wood trim in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-ckmTGo70gaW7jqTUDEizw3fC4XiB_21DBMEw4CnjOVEFNVFD2CqZH7Mmo2PdhweGOcEYb3ISncRp7uHgJwb9UJImZy2vEfCvkW3fvTzqV1o1gULaSIwmmNCisSBbiJCa88JQ6z1D_b7kwvt25U9j7uMxRYNUVbQD4di2lQmK2lFLFtb8mG7XjdhewNp4MSAJuw07oCwDo8PsdRw0Z1sdr-XuuNfDfI6otOUGQlGl-rcFVu0MCBvcV-mDH_Lt2ohHaNtvzLi2-Ok"/>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Up to 4 Passengers</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Cadillac XTS</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">The gold standard for executive airport transfers and private meetings. Experience quiet sophistication with ample legroom and premium leather upholstery.</p>
+</div>
+</div>
+<!-- Chevy Suburban - 7 Pax -->
+<div class="md:col-span-8 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-80 overflow-hidden rounded-md">
+<img alt="Chevy Suburban Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A clean black high-end SUV parked on a modern urban street with large glass buildings reflecting in its polished paint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAakWgFOBqD3n8lJELI45NhnB3hqTXxkOK93W9B7UTWtLApHy9uhOB7djpGN3ZfL5CjD6-i5Wjzd6M5OolLYCb6HMDdPrALLbXDOcKyEMGPj-RtzFd8BjG222Sv5Jo8qsy0_Bzzx6x2tqRJ_CVsNBRjRJAPp1955xzTeiTBZ_PJ3SlJuBxA6PywqluRY0UwDkVXC7uhbUZS4Cc_nck0Y75jdIRdDqEeu5LXoxvWfu1F4hNnXalD3ezWmxmDn3WVqHV-4eJIuIrF920"/>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Up to 7 Passengers</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Chevy Suburban</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Versatility meets luxury. Perfect for small groups requiring additional cargo space without compromising on the executive feel and commanding presence on the road.</p>
+</div>
+</div>
+<!-- Chrysler 300 Limousine - 8-10 Pax -->
+<div class="md:col-span-7 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-96 overflow-hidden rounded-md">
+<img alt="Stretch Limousine" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A long white stretch limousine parked in front of a high-end venue with warm glowing lights and elegant architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8nxuj6s5vWeIOzDDti2epuRar081QwCyzLCLA4U5LH-pT3F2DP0OgMIMxWZQ8Ycz80ia2uCO6WISRumRiwwKxHcXENM6U_0W02ar1il5WK9vJdLYL-jVEJvtO9JbdayM4NqOvBiiD8xFTWJRju6sKWSsW8dw-fGWk46LpRVlqBNtBIiSDsRZ1T3a_7pKW1bzj3XBYZ_XAZ4puZOvDKzC0yniNrtay3AZ-FnvNWhPr2sdrG4jKyLKgQhpaSAUr0lOU3D1dVYY3LNM"/>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">8-10 Passengers</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Chrysler 300 Limousines</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">An icon of celebration. Featuring custom ambient lighting and a full-service bar area, our stretch limousines turn transit into an unforgettable event.</p>
+</div>
+</div>
+<!-- Mercedes Sprinter -->
+<div class="md:col-span-5 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-96 overflow-hidden rounded-md">
+<img alt="Mercedes Sprinter" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Side profile of a sleek black executive sprinter van with tinted windows and polished wheels in a modern parking area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNfHZjG3i6bupdQProB5mfqPJIek0_tQIlHLBmOcZy65XJOQPKysu10X0V7y2uBVrfuFgtbz10R-KqcN1P7oDVycO2Se77aMGJAUxo8zMFFYwXY1McpNOX5xzaSjmh4MeF4GJeYkHGQvPUkjIXJbLh8qO5MI3HTifnzBgW9_9PMcthiReRqXagJQMzghEVTgCjkh644vw9B7cZm_XKrWweKTqXXD2LQTXOdipELd3oG30qsSr3DjN5jWCDwhbggJoxm8qPBq1Hh38"/>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">10 &amp; 14 Pax Configurations</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Mercedes Sprinter</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">The ultimate choice for corporate groups. Offering high-roof clearance and ergonomic seating designed for productivity and social interaction while on the move.</p>
+</div>
+</div>
+<!-- Shuttles & Limousine Buses -->
+<div class="md:col-span-6 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-72 overflow-hidden rounded-md">
+<div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center p-8">
+<img alt="Shuttle Bus" class="w-full h-full object-cover opacity-80" data-alt="A high-end white shuttle bus with large windows parked in a paved lot during a bright sunny afternoon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArd-dvAIfH136HLsm6g-c9dHVAeaJUqUWIePfZpqySSDEG9HoIGnAU0sjYUgKclB-b9JU3tV0yMgc3VEvop2Tbly4X45Q-hJAttCww_eH88Mw-swV2rNfp-LTGJ37mx6ZhdUNrRxaeZVkkpzv7gHQfuwUraJ7R1Ehp4YWQSJYmJQocU5YwO7-aQhvhlvYMGbLh7enjK7K5eAyPeG-0jm4epd2GS9JSZW2orKsx7DmIFUT7cC3fsO_5-e4BTO8NYdPGMh_Ur54brIY"/>
+</div>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">20-40 Passengers</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Events &amp; Party Buses</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Catering to mid-sized groups with configurations ranging from 20 to 40 passengers. Equipped with premium sound systems for social and corporate events.</p>
+</div>
+</div>
+<!-- 56 Passenger Coach -->
+<div class="md:col-span-6 bg-surface-container-low p-1 rounded-lg overflow-hidden group">
+<div class="relative h-72 overflow-hidden rounded-md">
+<img alt="Coach Bus" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Large silver motorcoach bus driving on an open highway through a green landscape under a blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMGFmOX8c0OXyagjW5zw1P8Yb0Mx0F1icgvHEBithNYhPMxu9YaZlV2obTjSy_7J1oMwohVJ-I-8SpPJZwEdZnWMao4cgjvqm1BkgYWxzlLqzBvEzVb_lOY9gFE-9wMygdgmObdj2R90NVoO0UDM_8WyMv2w3XP4ogZ1wYkMdskuxqHfHgRx0xnDE8gLWiBF_WyjZ3jiVhmix6y3V4aprpSatbC_HRzbln7l6RSPRIYEjbmATIlm5pkEKrg5itD3O7-WeOsSih7Fs"/>
+<div class="absolute top-4 left-4 glass-effect px-3 py-1 rounded-full">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">56 Passenger Coach</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl font-bold mb-3">Large Group Coach</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">Seamless logistics for large-scale group travel. Featuring restrooms, under-bus storage, and climate control for long-distance comfort.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The RSTQ Standard -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden">
+<img alt="Luxury car engine" class="w-full h-full object-cover" data-alt="Precision detail of a high-performance luxury car engine in clean metallic and carbon fiber finishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWgl445HMaPQsrnZQ6x4CBRTyVdu0vabFj8Me5LJDl-URrs_rv5UujZ4oJed94Zllpt0W49InTGZOk9_TOL-V6rIHQfAZvbuvTpHzmhYbH1BS-Z7U6p3qckgly5Fa4gAfpCXIJfbvJyC-9zythGHuaHhAAoy5Sma54wvO3L-1IlBLInsYXlB9kfyo6tDCo62QVQ1GjbbxcTx67dcNX8JR3mK8I0aAsxKXONcYyEsTJ7Jpe2q9kjneMcUIpX-XalsG38sPpiXIfOuU"/>
+</div>
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden mt-8">
+<img alt="Chauffeur" class="w-full h-full object-cover" data-alt="Close up of a professional chauffeur wearing white gloves opening a polished black car door" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlo56nRGXgSvUDk5jW0Gda52cA1NbKKnZ9jpiZEU6QRVkQ6Mno8yVYT1ZKdfLGccO3wTj74wQL3V_b2INq0mxCGYtoNxGQGeaDWk9x2bUnFKoOtJPVJKJlPbd6GUh_2jFet6Yvb0JtYL9vdZAXJyot0PpWRk0JKUEepNfpKfVDaVbGlKgMJZsSFPMn0qOzstqKICP6ghFC8E_4ArQvJIh4qO4S_s9JNRsD2sGLCKtase4c2yQjkt56M0U_mBwgb8mOvLWFYIORoos"/>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label text-secondary uppercase tracking-widest text-xs mb-4 block">Uncompromising Quality</span>
+<h2 class="font-headline font-bold text-5xl mb-10 leading-tight">The RSTQ <span class="text-gradient-gold italic">Standard</span></h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-secondary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Impeccable Maintenance</h4>
+<p class="text-on-surface-variant leading-relaxed">Each vehicle undergoes rigorous daily mechanical and aesthetic inspections to ensure perfect performance and presentation.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-secondary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="person_celebrate">person_celebrate</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Elite Chauffeurs</h4>
+<p class="text-on-surface-variant leading-relaxed">Our drivers are more than pilots; they are trained concierges, vetted through extensive background checks and service protocols.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-secondary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Safety Priority</h4>
+<p class="text-on-surface-variant leading-relaxed">Integrated real-time tracking, state-of-the-art safety technology, and specialized insurance coverage for complete peace of mind.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call To Action -->
+<section class="py-40 relative overflow-hidden bg-surface">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-secondary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-8 text-center">
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl mb-8 tracking-tighter">Ready to <span class="italic text-secondary">Ascend?</span></h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">Book your elite transportation experience today. Our dispatch team is available 24/7 to orchestrate your journey.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+<a class="group" href="tel:240-351-6025">
+<div class="flex flex-col items-center">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Direct Line</span>
+<span class="font-headline text-3xl font-bold group-hover:text-secondary transition-colors">240-351-6025</span>
+</div>
+</a>
+<div class="w-px h-12 bg-outline-variant/30 hidden md:block"></div>
+<button class="btn-gold-gradient text-on-secondary-fixed font-label font-bold uppercase tracking-widest px-12 py-5 rounded-md hover:scale-105 transition-transform">
+                    Book Your Experience
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-[#e6c364] uppercase tracking-[0.1em] font-headline mb-6">
+                    RSTQ Transportation
+                </div>
+<p class="text-[#e5e2e1]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Elevating the standard of luxury transportation in the DMV area through commitment, punctuality, and world-class service.
+                </p>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Quick Links</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Home</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">About Us</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Fleet</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Contact Info</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                        240-351-6025
+                    </li>
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                        info@rstq.net
+                    </li>
+<li class="flex items-start gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                        DMV Area, USA
+                    </li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Follow Us</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-[#e5e2e1]/40 font-['Plus_Jakarta_Sans'] text-xs tracking-wide">
+                © 2024 RSTQ Transportation. Where Your Journey Matters Most. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

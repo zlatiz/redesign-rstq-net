@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bespoke Travel Solutions | RSTQ Transportation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#785d00",
+              "on-error": "#690005",
+              "on-tertiary": "#003642",
+              "on-primary-fixed-variant": "#45455b",
+              "on-secondary-fixed": "#241a00",
+              "tertiary-fixed": "#b3ebff",
+              "secondary": "#e6c364",
+              "on-surface-variant": "#c8c5cd",
+              "outline-variant": "#47464c",
+              "primary-fixed": "#e2e0fc",
+              "secondary-fixed-dim": "#e6c364",
+              "surface-variant": "#353534",
+              "inverse-surface": "#e5e2e1",
+              "surface": "#131313",
+              "on-background": "#e5e2e1",
+              "surface-tint": "#c6c4df",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed-dim": "#4cd6fb",
+              "on-tertiary-fixed-variant": "#004e5f",
+              "tertiary": "#4cd6fb",
+              "surface-container-highest": "#353534",
+              "on-secondary-container": "#fdd977",
+              "secondary-fixed": "#ffe08f",
+              "primary-container": "#1a1a2e",
+              "surface-container": "#201f1f",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#c6c4df",
+              "on-error-container": "#ffdad6",
+              "primary": "#c6c4df",
+              "on-tertiary-fixed": "#001f27",
+              "surface-bright": "#393939",
+              "on-primary-container": "#83829b",
+              "on-tertiary-container": "#0090ad",
+              "surface-dim": "#131313",
+              "on-surface": "#e5e2e1",
+              "on-primary-fixed": "#1a1a2e",
+              "on-primary": "#2f2e43",
+              "surface-container-high": "#2a2a2a",
+              "inverse-on-surface": "#313030",
+              "on-secondary": "#3d2e00",
+              "outline": "#929097",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#001f27",
+              "inverse-primary": "#5d5c74",
+              "on-secondary-fixed-variant": "#584400"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  </head>
+<body class="overflow-x-hidden bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary">
+<!-- Shared TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/60 backdrop-blur-md shadow-[0_48px_48px_rgba(26,26,46,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#e6c364] font-headline">
+                RSTQ Transportation
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-headline font-bold tracking-tight">
+<a class="text-[#e6c364] border-b-2 border-[#e6c364] pb-1" href="/">Home</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/about-us/">About Us</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/fleet/">Fleet</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/services/">Services</a>
+<a class="text-[#e5e2e1] hover:text-[#e6c364] transition-colors" href="/contact/">Contact Us</a>
+</div>
+<button class="gold-gradient text-on-secondary-fixed px-6 py-2.5 rounded-md font-bold hover:opacity-80 transition-all duration-300 active:scale-95">
+                Book Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen min-h-[800px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="Luxurious black stretch limousine parked in front of the United States Capitol Building at twilight, cinematic lighting with gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVG1-GK3L5UkDmoYDNOTfpXmxsy3waQ9O4vUgvYPTP1KmA1qP0NOiTIaLK9Ho1fiYHvvyLl3yxnbYP30KVm7AeUWOKvYXHQIGiJAK69HQOkSW0QMBXwLQF-lothJ_8SvJKerH6288g_l40nhhs4iIRk9P29uICFPp4EVNi7_nl_RxNdnhb90AtyWLJvEpZOBTbQO4jHs8s_dMhyqZop8ETm4iN09ia__-U89Hd__zmL6SIJClozkBHxDGAL8qXE-l6Nu4kMrRntK0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-16 w-full max-w-[1440px] mx-auto">
+<div class="max-w-3xl">
+<span class="font-label text-secondary tracking-[0.4em] uppercase text-sm mb-6 block">Premium DMV Chauffeur</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+                    Bespoke Travel <br/>
+<span class="text-secondary italic font-light">Solutions</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Experience the pinnacle of luxury transportation in the DC, Maryland, and Virginia metropolitan areas. From diplomatic missions to celebratory nights.
+                </p>
+<div class="flex items-center space-x-6">
+<button class="bg-secondary text-on-secondary-fixed px-10 py-5 rounded-md font-label uppercase tracking-[0.2em] text-sm font-bold shadow-2xl">Explore Services</button>
+<div class="h-[1px] w-20 bg-outline-variant/30"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Introduction -->
+<section class="bg-surface py-32 px-16">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-end gap-12">
+<div class="md:w-1/2">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-8">Crafting Unforgettable Journeys Across the Capital Region</h2>
+</div>
+<div class="md:w-1/2">
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-4">
+                    At RSTQ Transportation, we believe that the journey is as significant as the destination. Our fleet of pristine vehicles and professional chauffeurs are dedicated to providing an unparalleled level of service.
+                </p>
+</div>
+</div>
+</section>
+<!-- Service Block: Airport Transportation -->
+<section class="bg-surface-container-low py-32 px-16">
+<div class="max-w-[1440px] mx-auto editorial-grid gap-12 items-center">
+<div class="col-span-12 lg:col-span-7">
+<img class="w-full aspect-video object-cover rounded-lg shadow-2xl" data-alt="Interior of a luxury sedan at night with ambient blue lighting, viewed from the backseat showing high-end leather and climate controls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoYNiQ69oXDUgSgLfGteG_9rVZyNj3JExlXjNfuOItZ55KBV4u71iAsscL44zv6sM1_BtW_QxeNwS8Do5vb4GDi8zaQXUNf7ZEjWDVlRynIQfCO3jyEFXRI8jA2JPYKlfzstMhBtjXJiqII7748SdCV4hhnGX5TCzJyG0g6HekMMVCg6r4kzy9dui25yXFVo8_tCoPLoAYbx2RC8o78sCG3trFia9n9PLZfmUCEy6AT9lwSAugKC8WQjVZa8npVo9y0UF3ffdbEyo"/>
+</div>
+<div class="col-span-12 lg:col-span-5">
+<span class="text-tertiary font-label uppercase tracking-widest text-xs mb-4 block">Corporate &amp; Executive</span>
+<h3 class="font-headline text-4xl font-bold mb-6 text-on-surface">Airport Transportation</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                    Reliable, punctual, and discreet transfers to IAD, DCA, and BWI. Our chauffeurs monitor your flight in real-time to ensure seamless transitions from the terminal to your destination.
+                </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="font-label uppercase text-xs tracking-wider">Meet &amp; Greet Service</span>
+</li>
+<li class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="font-label uppercase text-xs tracking-wider">Flight Tracking Integration</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Service Block: Weddings & Proms (Asymmetric Layout) -->
+<section class="bg-surface py-32 px-16">
+<div class="max-w-[1440px] mx-auto editorial-grid gap-12">
+<div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
+<div class="h-full flex flex-col justify-center">
+<h3 class="font-headline text-4xl font-bold mb-6 text-secondary">Weddings &amp; Proms</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        Make your milestone moments eternal. Our wedding packages feature "Just Married" signage, red carpet service, and pristine white or black late-model limousines tailored to your theme.
+                    </p>
+<div class="p-8 bg-surface-container-highest rounded-lg border-l-4 border-secondary">
+<p class="italic text-on-surface font-light">"The most professional service in the DMV area. Our wedding exit was perfectly timed and elegant."</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8 order-1 lg:order-2">
+<div class="relative">
+<img class="w-full h-[600px] object-cover rounded-lg" data-alt="Classic white luxury vehicle with wedding decorations parked in a scenic garden at sunset, romantic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHYcexW515lz-98-tX6eUqKwhdwWzh5H0Roy4kljp8ssima5Z7GwAAaN72nzWoaCnRxtxPDefaeoXuK5HQh9jgDrAvSfqKj3Cpg38RaKytRQgesL6WEl1IvIzfmCkaRqTFvm9gxj4h7kmnR6Fcvb8KqkFXq2A509pugTkyfvKgnkZtpp56OQXs_9i2LvUVoSBhWFWJhSsdXyTuQs_Tb28JhS6EIAqxFY-YzhkGYEeGBHWb1BT_VX5vOCncAYKH_BDrFrwuKraoEA8"/>
+<div class="absolute -bottom-6 -left-6 bg-secondary p-8 hidden md:block">
+<span class="text-on-secondary-fixed font-headline text-5xl font-extrabold uppercase leading-none">Luxury<br/>Defined</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Services: Tours & Entertainment -->
+<section class="bg-on-secondary-fixed py-32 px-16">
+<div class="max-w-[1440px] mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl font-bold text-secondary mb-4">Curated Experiences</h2>
+<p class="text-on-surface-variant uppercase tracking-[0.2em] text-sm">Beyond Point A to Point B</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto">
+<!-- Monument Tours -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.6]" data-alt="Lincoln Memorial at night with soft illumination reflecting in the water, seen through a dark car window frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB-DbUozgiBRTvyXXuVwnqK2mjDYZs7R37HnX0vQxxVFVyqh-fffM3UYXZPBw0z3RCiQMaqCPQt3EHVnkPhTM9uuC_kIQnKPz-744_EopFu6vF_nPrgONMW0jn0TTONq7Ba0xAC0ygLIqcACkBfX65YOfD613RUKfHkDr19vBk3MTu1EJPz-XTZsy0WY5iJqoty8B8S9EsYOVFQT2Q2P-340QefEC1iCzcBzy2oVb7ryHn3_Sj8EnOojg6biPPqK-tcBn4gK0omSI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end">
+<h4 class="font-headline text-3xl font-bold text-on-surface mb-2">Monument Tours</h4>
+<p class="text-on-surface-variant text-sm max-w-md">Private, night-time tours of DC's iconic landmarks with expert narration.</p>
+</div>
+</div>
+<!-- Wine & Brewery -->
+<div class="relative group overflow-hidden rounded-lg h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.6]" data-alt="Rows of wine barrels in a rustic cellar with warm candle-like lighting, high-end vineyard aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBU1QK_xg8juQojfMOPyGZxBEJSvstv5ANInIiEZuLb69N3fdy_UpdgqBSuli5Y4zVzFZsXZTdFt2qHRXpAxEPy_QEpbq6pQwgOjoytmJuef8kEaMxCX1eqh-sV0RKRyXohp8viOsLupIHBfyIj_8lZ7WlbNa6fR6KrXXDmh7G4WtLJRke5K1Gb2SMeT3Gpmdhem9PEENB8vJO2fhn02zCZG38-FHmfNX84fZ4wuQ9uuwGVMv6gKg_L2V35dsd2jchwBl6au7kbMU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end">
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-2">Virginia Wine Tours</h4>
+<p class="text-on-surface-variant text-sm">Chauffeured escapes to the finest Loudoun County vineyards.</p>
+</div>
+</div>
+<!-- Special Events -->
+<div class="relative group overflow-hidden rounded-lg h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.6]" data-alt="Blurred lights of a concert stage with silhouettes of a crowd, vibrant and energetic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjS7q8TA7bmP617NeBh-WfOh2WmS_S5fT3hwPe-vUxt2Reb2jEn3gSwv9MXZoFw3tmnaVuvs-fjc1YDtnMvfu77bopkUewQ-2ey8bxkBYjLGDDZEBKjmoYcMKCtSdI4MAyBJp-eQ7ofYeqMT68XO2-CfaglKb9NovYlJP1PJFN1Tk9V87GYTkg8aNBmGZgynL9rUh7ciBFcElqWgPY3G-qvknlyUXw1LqSnp4q5RCBifkkLcVmGZ8zVCrQysC2DJsek-vZgJQRdg0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end">
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-2">Entertainment</h4>
+<p class="text-on-surface-variant text-sm">Concerts, sporting events, and theater nights in style.</p>
+</div>
+</div>
+<!-- Charitable Moments -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-lg h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.6]" data-alt="Hands holding a small warm heart light, soft and compassionate warm colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOdJ852h0yEvprAGV5S-8egzuZHaSgCYQAEeXyqVAWq2wclzCJXQFsZB1ma5HJe3pCaw0oFO35P_g-eC4hdiEw2hIkSn5srtJgORal3ooqt4N969WujAd7rFFtUsZ8jBkHdVqyiecfPunxO4M4Yk-rBmqgSTiuJt1yoMKGBtKnWSkqCDloWwjbll8Z_vU_GQ3p3v_j1wGZ7dRe_fvyXn595gQZQoc3Wo310G-geCQ1-r49aXmL9bZFc5G2ZiKVlAzke5x1G608dDo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-10 flex flex-col justify-end">
+<h4 class="font-headline text-3xl font-bold text-on-surface mb-2">Charitable Moments</h4>
+<p class="text-on-surface-variant text-sm max-w-md">Supporting the community through donated services for local DMV non-profits and events.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Compassionate Service: Funerals -->
+<section class="bg-surface-container-highest py-32 px-16">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2">
+<img class="w-full aspect-[4/5] object-cover rounded-sm grayscale" data-alt="Quiet peaceful view of Arlington National Cemetery with white headstones and green grass in soft morning fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjRERXMUJLoTydc4ge_q5HTGJGziv6UsQlJ7KL95yh4RPF85frg-U1DI0_gac1mNObeMRqPkmqG3nhwGXLmram2j0fVZX1JJ1Wil3UH1qhsgzRAWLbb07DReHYJkSllxiZ9M11Bn_N1hlsDucDB4KgJWuRQkhpRP3gG8KT1XRFugIvbZulkRjdiew-0CHobeQek6R37zG-JplHglfmhop0BcZB6MYm0OBr0Lbs60rFRXYE7yMG0FovGBO450Xl93-7QbN9jZipZUw"/>
+</div>
+<div class="md:w-1/2">
+<span class="text-on-surface-variant font-label uppercase tracking-widest text-xs mb-4 block">Compassionate Care</span>
+<h3 class="font-headline text-4xl font-bold mb-6 text-on-surface">Funeral Transportation</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed text-lg">
+                    In times of grief, we provide dignified and respectful transportation for families. Our professional chauffeurs handle every detail with the utmost sensitivity, ensuring a calm environment for reflection and transition.
+                </p>
+<div class="border-t border-outline-variant/20 pt-8">
+<p class="font-label text-secondary text-sm uppercase tracking-widest">Discrete • Professional • Punctual</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-40 px-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-[#241a00] opacity-90"></div>
+<img class="w-full h-full object-cover mix-blend-overlay" data-alt="Macro shot of a luxury car dashboard showing high-tech gauges and brushed metal textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAclMwYsT_q-2dSXwjWfowF7vYUBAU0xTiAgAonCFg5-Oubra9s3kck519a2fT8D_YJX3f-idFmfRZbQp30nc4o9YqmPw8o4hrDlLEAQBGJRgRN5Z0l8ASFnL7w_nr0tTqWosONDGiMzOS6OpgmUUBOOWuQgohkVA4LUNPeGXh94miAoVvb5UN2KEjBI96s5kFjhfpNIMB3nvI9JwFCJBRp4X__voL2bnSH2Eu1K_vM6YfYuqtO3aE_wfl5Lc7kyqI4KSNXfAzQe_w"/>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto text-center">
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface mb-12 tracking-tight">
+                Ready to Experience <br/>
+<span class="text-secondary italic font-light">The RSTQ Standard?</span>
+</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+<button class="w-full md:w-auto bg-secondary text-on-secondary-fixed px-12 py-6 rounded-md font-label uppercase tracking-[0.2em] text-sm font-bold hover:bg-secondary-fixed transition-all shadow-xl">
+                    Request a Quote
+                </button>
+<a class="text-on-surface font-headline text-2xl font-bold flex items-center gap-4 hover:text-secondary transition-colors" href="tel:240-351-6025">
+<span class="material-symbols-outlined text-secondary">call</span>
+                    240-351-6025
+                </a>
+</div>
+</div>
+</section>
+<!-- Shared Footer -->
+<footer class="bg-[#131313] w-full pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-[#e6c364] uppercase tracking-[0.1em] font-headline mb-6">
+                    RSTQ Transportation
+                </div>
+<p class="text-[#e5e2e1]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Elevating the standard of luxury transportation in the DMV area through commitment, punctuality, and world-class service.
+                </p>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Quick Links</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Home</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">About Us</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Fleet</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#e6c364] transition-colors" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Contact Info</h6>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                        240-351-6025
+                    </li>
+<li class="flex items-center gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                        info@rstq.net
+                    </li>
+<li class="flex items-start gap-3 text-[#e5e2e1]/60">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                        DMV Area, USA
+                    </li>
+</ul>
+</div>
+<div>
+<h6 class="text-[#e6c364] font-bold text-sm tracking-widest uppercase mb-6">Follow Us</h6>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-[#e5e2e1]/60 hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-[#e5e2e1]/40 font-['Plus_Jakarta_Sans'] text-xs tracking-wide">
+                © 2024 RSTQ Transportation. Where Your Journey Matters Most. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
